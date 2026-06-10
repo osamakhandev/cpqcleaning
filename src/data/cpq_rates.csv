@@ -1,0 +1,55 @@
+effective_from,service,status,classification,rate_band,rate
+2025-07-01,Cleaning,Casual,Level 1,PH_FLAT,71.08
+2025-07-01,Cleaning,Casual,Level 1,SAT_FLAT,45.23
+2025-07-01,Cleaning,Casual,Level 1,SUN_FLAT,58.16
+2025-07-01,Cleaning,Casual,Level 1,WKDAY_DAY,32.31
+2025-07-01,Cleaning,Casual,Level 1,WKDAY_EMAFT,36.19
+2025-07-01,Cleaning,Casual,Level 1,WKDAY_PERM_NIGHT,40.06
+2025-07-01,Cleaning,Casual,Level 2,PH_FLAT,73.43
+2025-07-01,Cleaning,Casual,Level 2,SAT_FLAT,46.73
+2025-07-01,Cleaning,Casual,Level 2,SUN_FLAT,60.08
+2025-07-01,Cleaning,Casual,Level 2,WKDAY_DAY,33.38
+2025-07-01,Cleaning,Casual,Level 2,WKDAY_EMAFT,37.38
+2025-07-01,Cleaning,Casual,Level 2,WKDAY_PERM_NIGHT,41.39
+2025-07-01,Cleaning,Casual,Level 3,PH_FLAT,77.32
+2025-07-01,Cleaning,Casual,Level 3,SAT_FLAT,49.2
+2025-07-01,Cleaning,Casual,Level 3,SUN_FLAT,63.26
+2025-07-01,Cleaning,Casual,Level 3,WKDAY_DAY,35.14
+2025-07-01,Cleaning,Casual,Level 3,WKDAY_EMAFT,39.36
+2025-07-01,Cleaning,Casual,Level 3,WKDAY_PERM_NIGHT,43.58
+2025-07-01,Cleaning,Full Time,Level 1,PH_FLAT,64.62
+2025-07-01,Cleaning,Full Time,Level 1,SAT_FLAT,38.77
+2025-07-01,Cleaning,Full Time,Level 1,SUN_FLAT,51.69
+2025-07-01,Cleaning,Full Time,Level 1,WKDAY_DAY,25.85
+2025-07-01,Cleaning,Full Time,Level 1,WKDAY_EMAFT,29.72
+2025-07-01,Cleaning,Full Time,Level 1,WKDAY_PERM_NIGHT,33.6
+2025-07-01,Cleaning,Full Time,Level 2,PH_FLAT,66.76
+2025-07-01,Cleaning,Full Time,Level 2,SAT_FLAT,40.05
+2025-07-01,Cleaning,Full Time,Level 2,SUN_FLAT,53.41
+2025-07-01,Cleaning,Full Time,Level 2,WKDAY_DAY,26.7
+2025-07-01,Cleaning,Full Time,Level 2,WKDAY_EMAFT,30.71
+2025-07-01,Cleaning,Full Time,Level 2,WKDAY_PERM_NIGHT,34.71
+2025-07-01,Cleaning,Full Time,Level 3,PH_FLAT,70.29
+2025-07-01,Cleaning,Full Time,Level 3,SAT_FLAT,42.17
+2025-07-01,Cleaning,Full Time,Level 3,SUN_FLAT,56.23
+2025-07-01,Cleaning,Full Time,Level 3,WKDAY_DAY,28.12
+2025-07-01,Cleaning,Full Time,Level 3,WKDAY_EMAFT,32.33
+2025-07-01,Cleaning,Full Time,Level 3,WKDAY_PERM_NIGHT,36.55
+2025-07-01,Cleaning,Part Time,Level 1,PH_FLAT,68.5
+2025-07-01,Cleaning,Part Time,Level 1,SAT_FLAT,42.65
+2025-07-01,Cleaning,Part Time,Level 1,SUN_FLAT,55.57
+2025-07-01,Cleaning,Part Time,Level 1,WKDAY_DAY,29.72
+2025-07-01,Cleaning,Part Time,Level 1,WKDAY_EMAFT,33.6
+2025-07-01,Cleaning,Part Time,Level 1,WKDAY_PERM_NIGHT,33.6
+2025-07-01,Cleaning,Part Time,Level 2,PH_FLAT,70.76
+2025-07-01,Cleaning,Part Time,Level 2,SAT_FLAT,44.06
+2025-07-01,Cleaning,Part Time,Level 2,SUN_FLAT,57.41
+2025-07-01,Cleaning,Part Time,Level 2,WKDAY_DAY,30.71
+2025-07-01,Cleaning,Part Time,Level 2,WKDAY_EMAFT,34.71
+2025-07-01,Cleaning,Part Time,Level 2,WKDAY_PERM_NIGHT,34.71
+2025-07-01,Cleaning,Part Time,Level 3,PH_FLAT,74.51
+2025-07-01,Cleaning,Part Time,Level 3,SAT_FLAT,46.39
+2025-07-01,Cleaning,Part Time,Level 3,SUN_FLAT,60.45
+2025-07-01,Cleaning,Part Time,Level 3,WKDAY_DAY,32.33
+2025-07-01,Cleaning,Part Time,Level 3,WKDAY_EMAFT,36.55
+2025-07-01,Cleaning,Part Time,Level 3,WKDAY_PERM_NIGHT,36.55

@@ -1,0 +1,28 @@
+project_id = "hbbvafyfazrvtvyskzry"
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.stripe-update-subscription]
+verify_jwt = true
+
+[functions.stripe-create-checkout]
+verify_jwt = false
+
+[functions.stripe-create-subscription]
+verify_jwt = false
+
+[functions.stripe-check-subscription]
+verify_jwt = false
+
+[functions.stripe-calculate-tax]
+verify_jwt = false
+
+[functions.stripe-config]
+verify_jwt = false
+
+[functions.backfill-profiles]
+verify_jwt = false
+
+[functions.validate-email]
+verify_jwt = false

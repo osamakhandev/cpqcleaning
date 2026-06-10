@@ -1,0 +1,1 @@
+ALTER TABLE public.projects ADD COLUMN folder text DEFAULT null;

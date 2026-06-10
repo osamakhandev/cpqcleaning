@@ -1,0 +1,359 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 187 65% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 15% 93%;
+    --secondary-foreground: 220 20% 20%;
+
+    --muted: 210 15% 96%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 187 45% 92%;
+    --accent-foreground: 187 65% 25%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 38 95% 20%;
+    --warning-bg: 43 96% 95%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 187 65% 35%;
+
+    --radius: 0.5rem;
+
+    /* Roster specific */
+    --shift-day: 187 65% 45%;
+    --shift-night: 260 55% 50%;
+    --break-unpaid: 0 0% 85%;
+    --break-paid: 187 45% 65%;
+    --timeline-bg: 210 15% 94%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 187 65% 45%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 210 15% 85%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 210 10% 55%;
+
+    --accent: 187 35% 18%;
+    --accent-foreground: 187 50% 75%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 38 95% 10%;
+    --warning-bg: 38 50% 15%;
+
+    --success: 142 60% 40%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 187 65% 45%;
+
+    --shift-day: 187 55% 50%;
+    --shift-night: 260 50% 55%;
+    --break-unpaid: 220 10% 25%;
+    --break-paid: 187 40% 45%;
+    --timeline-bg: 220 15% 15%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .data-cell {
+    @apply font-mono text-sm tabular-nums;
+  }
+
+  .time-input {
+    @apply font-mono text-center tracking-wider;
+  }
+
+  .warning-badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-warning-bg text-warning-foreground;
+  }
+
+  .timeline-bar {
+    @apply h-3 rounded-sm relative overflow-visible;
+    background: hsl(var(--timeline-bg));
+  }
+
+  .shift-segment {
+    @apply absolute h-full rounded-sm;
+  }
+
+  .shift-day {
+    background: hsl(var(--shift-day));
+  }
+
+  .shift-night {
+    background: hsl(var(--shift-night));
+  }
+
+  .break-unpaid {
+    background: hsl(var(--break-unpaid));
+  }
+
+  .break-paid {
+    background: hsl(var(--break-paid));
+  }
+
+  .supervision-hatch {
+    position: relative;
+  }
+
+  .supervision-hatch::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 3px,
+      rgba(128, 128, 128, 0.25) 3px,
+      rgba(128, 128, 128, 0.25) 5px
+    );
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+}
+
+@layer utilities {
+  .bg-warning-bg {
+    background-color: hsl(var(--warning-bg));
+  }
+
+  .text-warning-foreground {
+    color: hsl(var(--warning-foreground));
+  }
+
+  .bg-warning {
+    background-color: hsl(var(--warning));
+  }
+
+  .text-warning {
+    color: hsl(var(--warning));
+  }
+
+  .bg-success {
+    background-color: hsl(var(--success));
+  }
+
+  .text-success {
+    color: hsl(var(--success));
+  }
+}
+
+/* ── Print styles ─────────────────────────────────────────────── */
+@page {
+  size: A4 portrait;
+  margin: 15mm 18mm 20mm 18mm;
+}
+
+@page landscape {
+  size: A4 landscape;
+  margin: 15mm 18mm 20mm 18mm;
+}
+
+@media print {
+  /* ── Root layout ── */
+  html, body, #root {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    display: block !important;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ── Hide non-print elements ── */
+  .no-print,
+  header,
+  nav,
+  .sticky,
+  .tabs,
+  .controls,
+  [role="dialog"],
+  [data-radix-popper-content-wrapper] {
+    display: none !important;
+  }
+
+  /* ── Print report page layout ── */
+  .print-report {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* ── Tables ── */
+  table {
+    width: 100% !important;
+    font-size: 10px !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #ddd !important;
+    padding: 4px 6px !important;
+  }
+
+  /* ── Sections: avoid bad breaks ── */
+  .print-section,
+  .section,
+  .chart-card,
+  .approval-section,
+  table {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+    height: 0 !important;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  /* ── Cards ── */
+  .card, [class*="Card"] {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  /* ── Landscape page assignment ── */
+  .landscape-print {
+    page: landscape;
+  }
+
+  /* ── Print footer ── */
+  .print-footer {
+    display: block !important;
+  }
+}
+
+/* ── Job Details export-as-image styling ── */
+.job-details-export {
+  background: #ffffff !important;
+  padding: 24px !important;
+}
+
+.job-details-export .no-print {
+  display: none !important;
+}
+
+.job-details-export .z-50 {
+  display: none !important;
+}
+
+.job-details-export input,
+.job-details-export select,
+.job-details-export textarea,
+.job-details-export [role="combobox"] {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+.job-details-export .bg-\[hsl\(48\,80\%\,90\%\)\] {
+  background: transparent !important;
+}
+
+.job-details-export .border-\[hsl\(48\,50\%\,70\%\)\] {
+  border-color: transparent !important;
+}
+
+/* ── Labour Price Breakdown export-as-image styling ── */
+.labour-breakdown-export {
+  background: #ffffff !important;
+  padding: 32px !important;
+}
+
+.labour-breakdown-export .no-print {
+  display: none !important;
+}
+
+.labour-breakdown-export .z-50 {
+  display: none !important;
+}
